@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|solutionrelative:MyGameEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|solutionrelative:MyGameEngine\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|solutionrelative:MyGameEngine\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\WindowManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|solutionrelative:MyGameEngine\\WindowManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\WindowManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4AA001C9-5134-48BB-B907-CFDEC081BA29}|MyGameEngine\\MyGameEngine.vcxproj|solutionrelative:MyGameEngine\\WindowManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WindowManager.cpp",
+              "DocumentMoniker": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\WindowManager.cpp",
+              "RelativeDocumentMoniker": "MyGameEngine\\WindowManager.cpp",
+              "ToolTip": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\WindowManager.cpp",
+              "RelativeToolTip": "MyGameEngine\\WindowManager.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T05:36:56.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WindowManager.h",
+              "DocumentMoniker": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\WindowManager.h",
+              "RelativeDocumentMoniker": "MyGameEngine\\WindowManager.h",
+              "ToolTip": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\WindowManager.h",
+              "RelativeToolTip": "MyGameEngine\\WindowManager.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-20T05:16:23.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Renderer.h",
+              "DocumentMoniker": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\Renderer.h",
+              "RelativeDocumentMoniker": "MyGameEngine\\Renderer.h",
+              "ToolTip": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\Renderer.h",
+              "RelativeToolTip": "MyGameEngine\\Renderer.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-20T05:16:10.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -26,11 +77,24 @@
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\main.cpp",
               "RelativeDocumentMoniker": "MyGameEngine\\main.cpp",
-              "ToolTip": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\main.cpp",
-              "RelativeToolTip": "MyGameEngine\\main.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABrAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\main.cpp*",
+              "RelativeToolTip": "MyGameEngine\\main.cpp*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-12T06:03:06.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Renderer.cpp",
+              "DocumentMoniker": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\Renderer.cpp",
+              "RelativeDocumentMoniker": "MyGameEngine\\Renderer.cpp",
+              "ToolTip": "C:\\Users\\tohan\\source\\repos\\MyGameEngine\\MyGameEngine\\Renderer.cpp",
+              "RelativeToolTip": "MyGameEngine\\Renderer.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T05:15:58.96Z",
               "EditorCaption": ""
             }
           ]

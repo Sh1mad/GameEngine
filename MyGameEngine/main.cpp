@@ -1,46 +1,40 @@
-#include <SFML/Graphics.hpp>
+п»ї#include "WindowManager.h"
+#include "Renderer.h"
+#include <iostream>
+#include <windows.h>
 
 int main() {
-    // Создаем окно размером 800x600 с заголовком "My Game Engine"
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My Game Engine");
+    SetConsoleOutputCP(1251);
 
-    // Создаем квадрат (игрока)
-    sf::RectangleShape player(sf::Vector2f(50, 50)); // Размер 50x50
-    player.setFillColor(sf::Color::Red); // Красный цвет
-    player.setPosition(400, 300); // Стартовая позиция в центре
+    WindowManager windowManager;
+    // РЎРѕР·РґР°РЅРёРµ РѕРєРЅР°
+    windowManager.createWindow("My 2D Game", 800, 600);
 
-    // Главный цикл: работает, пока окно открыто
-    while (window.isOpen()) {
-        // Обработка событий (закрытие окна, нажатие клавиш и т.д.)
+    // РЎРѕР·РґР°РЅРёРµ СЂРµРЅРґРµСЂР°
+    Renderer renderer;
+    renderer.setWindow(windowManager.getWindowPtr());
+
+    sf::RectangleShape player(sf::Vector2f(50, 50));
+    player.setFillColor(sf::Color::Red);
+    player.setPosition(400, 300);
+
+    // Р“Р»Р°РІРЅС‹Р№ С†РёРєР» РёРіСЂС‹
+    while (windowManager.isWindowOpen()) {
         sf::Event event;
-        while (window.pollEvent(event)) {
-            if ((event.type == sf::Event::Closed) || ((event.type == sf::Event::KeyPressed) && (event.key.code == sf::Keyboard::Escape)))
-                window.close();
+        while (windowManager.getWindow().pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                windowManager.closeWindow();
+            }
         }
 
-        // Управление игроком
-        float moveSpeed = 1.0f;
-        if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::A))) {
-            player.move(-moveSpeed, 0); // Влево
-        }
-        if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::D))) {
-            player.move(moveSpeed, 0); // Вправо
-        }
-        if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::W))) {
-            player.move(0, -moveSpeed); // Вверх
-        }
-        if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::S))) {
-            player.move(0, moveSpeed); // Вниз
-        }
+        // РћС‡РёСЃС‚РєР° СЌРєСЂР°РЅР°
+        renderer.clear(sf::Color::Blue);
 
-        // Очищаем окно черным цветом
-        window.clear(sf::Color::Black);
+        // РћС‚СЂРёСЃРѕРІРєР° СЃРїСЂР°Р№С‚Р° Рё С‚РµРєСЃС‚Р°
+        renderer.drawRectangle(player);
 
-        // Рисуем игрока
-        window.draw(player);
-
-        // Отображаем на экране
-        window.display();
+        // РћС‚РѕР±СЂР°Р¶РµРЅРёРµ РєР°РґСЂР°
+        renderer.display();
     }
 
     return 0;
