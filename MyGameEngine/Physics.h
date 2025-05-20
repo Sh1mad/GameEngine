@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include "Entity.h"
 
-enum class CollysionType {
+enum class CollisionType {
 	None,       // Нет столкновения
 	Top,        // Столкновение сверху
 	Bottom,     // Столкновение снизу
@@ -22,17 +22,18 @@ public:
 	void applyGravity(Entity& object, float deltaTime);
 
 	// Перемещение объекта
-	void moveObject(sf::RectangleShape& object, float dx, float dy);
+	void moveObject(Entity& a);
 
 	// Обновление состояния объектов
-	void update(float deltaTime);
+	//void update(float deltaTime);
+
+	void handleCollision(Entity& a, Entity& b);
 
 private:
-	float gravity = 9.8f;
+	float gravity = 1.0f;
 
-protected:
 	// Проверка столкновения между двумя объектами
-	CollysionType checkCollision(Entity& a, Entity& b) const;
+	CollisionType checkCollision(Entity& a, Entity& b) const;
 };
 
 #endif // !PHYSICS_H

@@ -17,16 +17,17 @@ void InputManager::pollEvents(const sf::Event& event) {
     if (event.type == sf::Event::KeyPressed) {
         keyStates[event.key.code] = true;
     }
-    else if (event.type == sf::Event::KeyReleased) {
+    if (event.type == sf::Event::KeyReleased) {
         keyStates[event.key.code] = false;
     }
 
     if (event.type == sf::Event::MouseButtonPressed) {
         mouseButtonStates[event.mouseButton.button] = true;
     }
-    else if (event.type == sf::Event::MouseButtonReleased) {
+    if (event.type == sf::Event::MouseButtonReleased) {
         mouseButtonStates[event.mouseButton.button] = false;
     }
+
 }
 
 bool InputManager::isKeyPressed(sf::Keyboard::Key key) const{

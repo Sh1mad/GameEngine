@@ -36,6 +36,7 @@ private:
 
 	// Состояние кнопок мыши
 	std::unordered_map<sf::Mouse::Button, bool> mouseButtonStates;
+
 };
 
 #endif // !INPUT_MANAGER_H

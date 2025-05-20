@@ -22,7 +22,7 @@ void WindowManager::createWindow(const sf::String& title, unsigned width, unsign
     }
 
     // Настройка вертикальной синхронизации
-    window.setVerticalSyncEnabled(true);
+    //window.setVerticalSyncEnabled(true);
 
     isFullScreen = fullscreen;
 }
